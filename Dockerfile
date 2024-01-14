@@ -11,7 +11,7 @@ RUN git clone https://github.com/gabrielecirulli/2048.git .
 RUN npm install
 
 # Expose the port on which the app will run
-EXPOSE 8080
+EXPOSE 8070
 
 # Start the 2048 game
 CMD ["npm", "start"]
