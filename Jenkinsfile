@@ -15,7 +15,7 @@ pipeline {
                     
                     withDockerRegistry(credentialsId: '4dc60544-f54b-48cd-ad44-bd685badc389', toolName: 'docker-game') {
                         
-                        sh "docker build -t react-project -f Dockerfile ."
+                        sh "docker build -t docker-game -f Dockerfile ."
                         sh "docker tag  docker-game karan143/docker-game:latest"
                         sh "docker push karan143/docker-game:latest"
                     }
